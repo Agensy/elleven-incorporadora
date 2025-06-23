@@ -1,0 +1,116 @@
+/* =============================================================================
+   CORES OFICIAIS - ELLEVEN ENGENHARIA
+   ============================================================================= */
+
+:root {
+  /* Cores Primárias */
+  --elleven-primary: #1A2D54;
+  --elleven-primary-hover: #152444;
+  --elleven-primary-light: rgba(26, 45, 84, 0.1);
+  --elleven-primary-dark: #0F1A30;
+  
+  /* Cores Neutras */
+  --elleven-gray-50: #F8FAFC;
+  --elleven-gray-100: #F1F5F9;
+  --elleven-gray-200: #E2E8F0;
+  --elleven-gray-300: #CBD5E1;
+  --elleven-gray-400: #94A3B8;
+  --elleven-gray-500: #64748B;
+  --elleven-gray-600: #475569;
+  --elleven-gray-700: #334155;
+  --elleven-gray-800: #1E293B;
+  --elleven-gray-900: #0F172A;
+  
+  /* Cores de Apoio */
+  --elleven-success: #059669;
+  --elleven-warning: #D97706;
+  --elleven-error: #DC2626;
+  --elleven-info: #0284C7;
+  
+  /* Gradientes */
+  --elleven-gradient-primary: linear-gradient(135deg, #1A2D54 0%, #152444 100%);
+  --elleven-gradient-light: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
+}
+
+/* =============================================================================
+   CLASSES UTILITÁRIAS
+   ============================================================================= */
+
+/* Backgrounds */
+.bg-elleven-primary { background-color: var(--elleven-primary); }
+.bg-elleven-primary-hover { background-color: var(--elleven-primary-hover); }
+.bg-elleven-primary-light { background-color: var(--elleven-primary-light); }
+
+/* Text Colors */
+.text-elleven-primary { color: var(--elleven-primary); }
+.text-elleven-primary-hover { color: var(--elleven-primary-hover); }
+
+/* Border Colors */
+.border-elleven-primary { border-color: var(--elleven-primary); }
+.border-elleven-primary-light { border-color: var(--elleven-primary-light); }
+
+/* =============================================================================
+   COMPONENTES PRÉ-ESTILIZADOS
+   ============================================================================= */
+
+/* Botão Primário */
+.btn-elleven-primary {
+  background-color: var(--elleven-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-elleven-primary:hover {
+  background-color: var(--elleven-primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Card com tema Elleven */
+.card-elleven {
+  background: white;
+  border: 1px solid var(--elleven-gray-200);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(26, 45, 84, 0.1);
+  transition: all 0.2s ease;
+}
+
+.card-elleven:hover {
+  box-shadow: 0 4px 12px rgba(26, 45, 84, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Header com gradiente */
+.header-elleven {
+  background: var(--elleven-gradient-primary);
+  color: white;
+}
+
+/* =============================================================================
+   EXEMPLOS DE USO
+   ============================================================================= */
+
+/*
+// HTML
+<div class="bg-elleven-primary text-white p-4">
+  Conteúdo com cor primária
+</div>
+
+<button class="btn-elleven-primary">
+  Botão Elleven
+</button>
+
+// CSS Custom
+.meu-elemento {
+  background-color: var(--elleven-primary);
+  border: 1px solid var(--elleven-primary-light);
+}
+
+// Tailwind CSS (se usando)
+<div className="text-white" style={{ backgroundColor: "var(--elleven-primary)" }}>
+  Elemento com cor da marca
+</div>
+*/ 
